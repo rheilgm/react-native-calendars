@@ -7,7 +7,7 @@ export default function styleConstructor(theme = {}) {
   const appStyle = {...defaultStyle, ...theme};
   return  StyleSheet.create({
     container: {
-      flexDirection: 'row'
+      flexDirection: appStyle.agendaFlexDirection
     },
     dayNum: {
       fontSize: 28,
